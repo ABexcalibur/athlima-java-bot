@@ -1,0 +1,1 @@
+worker: java -jar build/libs/my-jda-bot-1.0-all.jar
