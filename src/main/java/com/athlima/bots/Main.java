@@ -11,7 +11,7 @@ public class Main {
     public static final String prefix = "ath ";
     public static void main(String[] args) {
         DiscordApi api = new DiscordApiBuilder()
-                .setToken("ODczODc1NjQxNTA0Nzg4NDgw.YQ-yHA.WHE9RPiBqnnwlI72KdMfGHb7cNg")
+                .setToken(System.getenv("TOKEN"))
                 .login().join();
         api.addListener(new Ping());
         api.addListener(new Help());
